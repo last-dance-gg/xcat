@@ -1,0 +1,43 @@
+.space {
+  block-size: 100%;
+  inline-size: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+.stars {
+  inset: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+.cosmicGlow {
+  inset: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.earthGlow {
+  inset: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.earth {
+  inset: 0;
+  position: absolute;
+  z-index: 2;
+}
+
+.earthGlowSurface {
+  inset: 0;
+  position: absolute;
+  z-index: 3;
+}
+
+.headline {
+  inset-inline: 0;
+  inset-block-start: 100px;
+  position: absolute;
+  z-index: 4;
+}

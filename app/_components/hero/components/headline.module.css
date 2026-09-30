@@ -1,0 +1,93 @@
+.container {
+  max-inline-size: 800px;
+  margin-inline: auto;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  align-items: center;
+  color: var(--mantine-color-gray-0);
+}
+
+.highlight {
+  display: inline-block;
+  background-color: transparent;
+  padding: 0.25rem 0.95rem;
+  border-radius: 100px;
+  border: 3px solid var(--mantine-color-dark-0);
+  font-weight: 900;
+  vertical-align: middle;
+  position: relative;
+}
+
+.xcat {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 64px;
+  height: 64px;
+}
+
+.rotatingTextContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.rotatingText {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+
+  background-color: var(--mantine-color-gray-0);
+  color: var(--mantine-color-dark-7);
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1;
+
+  overflow: hidden;
+
+  padding-top: 0.05rem;
+  padding-bottom: 0.05rem;
+
+  justify-content: center;
+  border-radius: 100px;
+}
+
+.rotatingTextSplit {
+  overflow: hidden;
+  padding-bottom: 0.125rem;
+}
+
+@media (min-width: 640px) {
+  .rotatingText {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.05rem;
+    padding-bottom: 0.05rem;
+  }
+
+  .rotatingTextSplit {
+    padding-bottom: 0.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .rotatingText {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.05rem;
+    padding-bottom: 0.05rem;
+  }
+
+  .rotatingTextSplit {
+    padding-bottom: 0.25rem;
+  }
+}

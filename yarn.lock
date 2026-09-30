@@ -547,6 +547,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@photostructure/tz-lookup@npm:^11.6.1":
+  version: 11.7.0
+  resolution: "@photostructure/tz-lookup@npm:11.7.0"
+  checksum: 10c0/955760d41844c06243129d9b42cebacc0d3f26b5eafb60eafb25ba6ef903803f65b65d6d9c9b9670dac0aa64239668b555715ebfaa52db4f12a2f1cb92d973c9
+  languageName: node
+  linkType: hard
+
 "@react-three/drei@npm:^10.7.9":
   version: 10.7.9
   resolution: "@react-three/drei@npm:10.7.9"
@@ -918,10 +925,40 @@ __metadata:
   languageName: node
   linkType: hard
 
+"framer-motion@npm:^13.4.6":
+  version: 13.4.6
+  resolution: "framer-motion@npm:13.4.6"
+  dependencies:
+    motion-dom: "npm:^13.4.5"
+    motion-utils: "npm:^13.3.0"
+    tslib: "npm:^2.4.0"
+  peerDependencies:
+    react: ^18.0.0 || ^19.0.0
+    react-dom: ^18.0.0 || ^19.0.0
+  peerDependenciesMeta:
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: 10c0/507d4d7077310412c4c379a5be5dad672baa6927738c47701db7448395bffb6b5fc64be55ec406ca5502192df2c98f165cbf975ee6b8c442256a262bdad31e5e
+  languageName: node
+  linkType: hard
+
 "get-nonce@npm:^1.0.0":
   version: 1.0.1
   resolution: "get-nonce@npm:1.0.1"
   checksum: 10c0/2d7df55279060bf0568549e1ffc9b84bc32a32b7541675ca092dce56317cdd1a59a98dcc4072c9f6a980779440139a3221d7486f52c488e69dc0fd27b1efb162
+  languageName: node
+  linkType: hard
+
+"globe-threejs@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "globe-threejs@npm:3.0.1"
+  dependencies:
+    "@photostructure/tz-lookup": "npm:^11.6.1"
+  peerDependencies:
+    three: ">=0.150.0"
+  checksum: 10c0/41eb5f4c40c7ee6067b59b62e6b3bb13365b40b7d6fbaeec2a138de4b99f1134b7bc9ed31a312f86893b394cf1293444ed8a0c0f8599d255b0b1a0a3093fa2db
   languageName: node
   linkType: hard
 
@@ -1010,6 +1047,8 @@ __metadata:
     "@types/react": "npm:19.2.14"
     "@types/react-dom": "npm:^19.2.1"
     "@types/three": "npm:^0"
+    globe-threejs: "npm:^3.0.1"
+    motion: "npm:^13.4.6"
     next: "npm:16.2.2"
     oxc-config-mantine: "npm:^1.0.0"
     oxlint: "npm:^1.70.0"
@@ -1037,6 +1076,40 @@ __metadata:
   version: 1.1.1
   resolution: "meshoptimizer@npm:1.1.1"
   checksum: 10c0/aacd816cbe206e49f16c88ed8b13deafec40cdb8b844080b6d614b4d945dfc7242d5dccfbc1269375a5d4dce2f354261c107d3ce6e564961bd9a220e4616dafb
+  languageName: node
+  linkType: hard
+
+"motion-dom@npm:^13.4.5":
+  version: 13.4.5
+  resolution: "motion-dom@npm:13.4.5"
+  dependencies:
+    motion-utils: "npm:^13.3.0"
+  checksum: 10c0/b9443ef8e8ddc9a347959202c9d70f23d99c152c7d5f1b4e0aef416ccca5306d110bd0b06eecab6460cfee60c546ce7d953032fa72211e37c56a0c3c0f22b11b
+  languageName: node
+  linkType: hard
+
+"motion-utils@npm:^13.3.0":
+  version: 13.3.0
+  resolution: "motion-utils@npm:13.3.0"
+  checksum: 10c0/9efb8388cc43501d1d6d1f2997fdd3a9e4c2bd42c57c3979586fdbcc83969a3b9aae7e3108cfb53312db0a46d945ad1b4d54ad388a6585f2eb5f5e742a58d927
+  languageName: node
+  linkType: hard
+
+"motion@npm:^13.4.6":
+  version: 13.4.6
+  resolution: "motion@npm:13.4.6"
+  dependencies:
+    framer-motion: "npm:^13.4.6"
+    tslib: "npm:^2.4.0"
+  peerDependencies:
+    react: ^18.0.0 || ^19.0.0
+    react-dom: ^18.0.0 || ^19.0.0
+  peerDependenciesMeta:
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: 10c0/558efa2580256995f99a18fd2e9951fa15dd51c6cf6f67ac921c5faafc994f9705102033d565cc1a423723da841ee0edc9b042dcff3420a2a9cb3197bf205d5e
   languageName: node
   linkType: hard
 

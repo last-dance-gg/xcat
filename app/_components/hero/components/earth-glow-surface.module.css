@@ -1,0 +1,16 @@
+.container {
+  position: absolute;
+  inset: -30%;
+  pointer-events: none;
+
+  background: radial-gradient(
+    ellipse 45% 60% at 50% 60%,
+    rgba(81, 148, 255, 0.45) 0%,
+    rgba(50, 110, 215, 0.25) 35%,
+    transparent 80%
+  );
+
+  filter: blur(50px);
+  transform: translateZ(0);
+  opacity: 0.15;
+}

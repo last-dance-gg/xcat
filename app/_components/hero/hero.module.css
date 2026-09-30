@@ -1,0 +1,6 @@
+.container {
+  inline-size: 100%;
+  position: relative;
+  block-size: 160vh;
+  overflow: hidden;
+}

@@ -1,0 +1,23 @@
+.container {
+  position: absolute;
+  inset: -30%;
+  pointer-events: none;
+
+  background:
+    radial-gradient(
+      ellipse 45% 35% at 50% 35%,
+      rgba(95, 45, 220, 0.32) 0%,
+      rgba(55, 35, 160, 0.18) 35%,
+      transparent 80%
+    ),
+    radial-gradient(
+      ellipse 35% 30% at 75% 65%,
+      rgba(20, 90, 255, 0.22) 0%,
+      transparent 80%
+    );
+
+  filter: blur(90px);
+  transform: translateZ(0);
+  opacity: 0.5;
+
+}
