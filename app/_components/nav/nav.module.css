@@ -1,0 +1,17 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  background-color: color-mix(in srgb, var(--space-bg) 80%, transparent);
+  backdrop-filter: blur(16px);
+}
+
+.nav {
+  margin-inline: auto;
+  inline-size: 100%;
+  max-inline-size: 1200px;
+  padding-block: 1rem;
+}

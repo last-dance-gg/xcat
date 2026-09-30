@@ -1,5 +1,5 @@
 .space {
-  block-size: 100%;
+  block-size: 160vh;
   inline-size: 100%;
   position: relative;
   z-index: 0;

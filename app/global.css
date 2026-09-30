@@ -1,3 +1,8 @@
+:root {
+  --space-bg: #02030b;
+}
+
 body {
-  background-color: #000;
+  background-color: var(--space-bg);
+  overflow-x: hidden;
 }

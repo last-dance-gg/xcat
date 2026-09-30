@@ -5,13 +5,12 @@
 
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 1rem;
 }
 
 .headline {
   display: flex;
   flex-direction: column;
-  gap: 0.2rem;
   align-items: center;
   color: var(--mantine-color-gray-0);
 }

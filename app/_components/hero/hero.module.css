@@ -1,6 +1,16 @@
 .container {
-  inline-size: 100%;
   position: relative;
-  block-size: 160vh;
-  overflow: hidden;
+}
+
+.space {
+  position: absolute;
+  z-index: 0;
+  inset: 1;
+}
+
+.headline {
+  position: relative;
+  z-index: 1;
+  padding-block-start: 9rem;
+  padding-block-end: 30vh;
 }
