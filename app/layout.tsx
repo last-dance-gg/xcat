@@ -5,6 +5,8 @@ import {
   mantineHtmlProps,
 } from "@mantine/core"
 import { theme } from "../theme"
+import "@mantine/core/styles.css"
+import "@mantine/lightbox/styles.css"
 
 export const metadata = {
   title: "XCAT",

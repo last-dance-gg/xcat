@@ -5,14 +5,30 @@ import {
   IconSparkles,
   IconUsersGroup,
 } from "@tabler/icons-react"
+import { motion } from "motion/react"
 
 export function Roadmap() {
   return (
     <section>
       <Stack gap={48} align="center">
-        <Title order={2} size={64}>
-          Roadmap
-        </Title>
+        <motion.div
+          initial={{ y: 60, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true, amount: 0.25 }}
+          transition={{
+            duration: 0.3,
+            ease: [0.7, 0, 0.2, 1],
+          }}
+        >
+          <Stack gap={16}>
+            <Title order={2} size={64}>
+              Roadmap, but Make it Cat.
+            </Title>
+            <Text size="sm" c="dimmed" ta="center">
+              Directional. Progress is shown, not promised.
+            </Text>
+          </Stack>
+        </motion.div>
 
         <Timeline active={0} bulletSize={36} lineWidth={4}>
           <Timeline.Item

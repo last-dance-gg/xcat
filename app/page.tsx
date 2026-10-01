@@ -11,6 +11,7 @@ import { Stars } from "@react-three/drei"
 import { Nav } from "./_components/nav/Nav"
 import { Buy } from "./_components/buy/Buy"
 import { Roadmap } from "./_components/roadmap/Roadmap"
+import { Memes } from "./_components/memes/Memes"
 
 export default function HomePage() {
   return (
@@ -37,6 +38,7 @@ export default function HomePage() {
         <Buy />
         <Crew />
         <Roadmap />
+        <Memes />
       </div>
     </div>
   )

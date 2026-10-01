@@ -333,6 +333,31 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@mantine/lightbox@npm:^9.6.3":
+  version: 9.6.3
+  resolution: "@mantine/lightbox@npm:9.6.3"
+  dependencies:
+    "@mantine/store": "npm:9.6.3"
+  peerDependencies:
+    "@mantine/core": 9.6.3
+    "@mantine/hooks": 9.6.3
+    embla-carousel: ">=8.0.0"
+    embla-carousel-react: ">=8.0.0"
+    react: ^19.2.0
+    react-dom: ^19.2.0
+  checksum: 10c0/fdc83ef25d643418e33de8191776256ed750d081f1b433e47c3017682d0bdb46410269497510f2da61b48b65590b6ab15a3ec89b157bfe0cb59c22dc3bd930bb
+  languageName: node
+  linkType: hard
+
+"@mantine/store@npm:9.6.3":
+  version: 9.6.3
+  resolution: "@mantine/store@npm:9.6.3"
+  peerDependencies:
+    react: ^19.2.0
+  checksum: 10c0/42d8186f6d4c9206edf9245deedba04685381fb4fb59eb0aa45e2a0ab0c9448d71f27cf165d30ec7f0f33a0e1aa1fdeaa518f3331edfa7bdeba872b32efa89e5
+  languageName: node
+  linkType: hard
+
 "@mediapipe/tasks-vision@npm:0.10.17":
   version: 0.10.17
   resolution: "@mediapipe/tasks-vision@npm:0.10.17"
@@ -917,6 +942,34 @@ __metadata:
   languageName: node
   linkType: hard
 
+"embla-carousel-react@npm:^8.5.2":
+  version: 8.6.0
+  resolution: "embla-carousel-react@npm:8.6.0"
+  dependencies:
+    embla-carousel: "npm:8.6.0"
+    embla-carousel-reactive-utils: "npm:8.6.0"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.1 || ^18.0.0 || ^19.0.0 || ^19.0.0-rc
+  checksum: 10c0/461b0c427a6fca62e730c7b39d08e9c55b01a2138c173d5b9ebf77ec92092a900b45ac384731c77382b48d5d65946994d3abba6e9899a66d6e16f8ddf191ed1c
+  languageName: node
+  linkType: hard
+
+"embla-carousel-reactive-utils@npm:8.6.0":
+  version: 8.6.0
+  resolution: "embla-carousel-reactive-utils@npm:8.6.0"
+  peerDependencies:
+    embla-carousel: 8.6.0
+  checksum: 10c0/33d07e6df4d8dec9b4fc95858838ea2d5e5df078039c05b2a342c05ba4979d8d18564a1c607da445fed744daf969a0b5a90124ce487a854e86ced6f0458b51e9
+  languageName: node
+  linkType: hard
+
+"embla-carousel@npm:8.6.0, embla-carousel@npm:^8.5.2":
+  version: 8.6.0
+  resolution: "embla-carousel@npm:8.6.0"
+  checksum: 10c0/f4c598e7be28b70340d31ffd2bebb2472db370b0c81d9b089bf9555cf618695f35dc4a0694565c994c9ab972731123063f945aa09ff485df0df761d79c6a08ef
+  languageName: node
+  linkType: hard
+
 "fdir@npm:^6.5.0":
   version: 6.5.0
   resolution: "fdir@npm:6.5.0"
@@ -1058,6 +1111,7 @@ __metadata:
   dependencies:
     "@mantine/core": "npm:9.6.1"
     "@mantine/hooks": "npm:9.6.1"
+    "@mantine/lightbox": "npm:^9.6.3"
     "@react-three/drei": "npm:^10.7.9"
     "@react-three/fiber": "npm:^9.8.1"
     "@react-three/postprocessing": "npm:^3.1.3"
@@ -1066,6 +1120,8 @@ __metadata:
     "@types/react": "npm:19.2.14"
     "@types/react-dom": "npm:^19.2.1"
     "@types/three": "npm:^0"
+    embla-carousel: "npm:^8.5.2"
+    embla-carousel-react: "npm:^8.5.2"
     globe-threejs: "npm:^3.0.1"
     motion: "npm:^13.4.6"
     next: "npm:16.2.2"
