@@ -12,5 +12,16 @@
   position: relative;
   z-index: 1;
   padding-block-start: 9rem;
-  padding-block-end: 30vh;
+  padding-block-end: 2rem;
 }
+
+.address {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block-end: 35vh;
+}
+
+

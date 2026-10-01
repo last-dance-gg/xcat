@@ -3,6 +3,7 @@
 import { Headline } from "./components/Headline"
 import Space from "./components/Space"
 import styles from "./hero.module.css"
+import { Address } from "./components/Address"
 
 export default function Hero() {
   return (
@@ -12,6 +13,9 @@ export default function Hero() {
       </div>
       <div className={styles.headline}>
         <Headline />
+      </div>
+      <div className={styles.address}>
+        <Address />
       </div>
     </div>
   )

@@ -60,7 +60,7 @@ export function Nav() {
             </ActionIcon>
             <Button
               component={Link}
-              href="/#about"
+              href="/#buy"
               variant="light"
               color="cyan"
               size="compact-sm"

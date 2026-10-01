@@ -9,6 +9,8 @@ import { Canvas } from "@react-three/fiber"
 import { Suspense } from "react"
 import { Stars } from "@react-three/drei"
 import { Nav } from "./_components/nav/Nav"
+import { Buy } from "./_components/buy/Buy"
+import { Roadmap } from "./_components/roadmap/Roadmap"
 
 export default function HomePage() {
   return (
@@ -32,7 +34,9 @@ export default function HomePage() {
       <div className={styles.content}>
         <Nav />
         <Hero />
+        <Buy />
         <Crew />
+        <Roadmap />
       </div>
     </div>
   )

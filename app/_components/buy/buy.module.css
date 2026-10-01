@@ -1,0 +1,6 @@
+.container {
+  position: relative;
+  margin-inline: auto;
+  max-inline-size: 800px;
+  z-index: 100;
+}

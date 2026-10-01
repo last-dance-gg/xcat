@@ -9,13 +9,13 @@ export function Headline() {
   return (
     <div className={styles.container}>
       <Group justify="center" gap={8}>
-        <Badge variant="outline" color="gray.4">
+        <Badge variant="outline" color="gray.5">
           STONKFUN
         </Badge>
-        <Badge variant="outline" color="gray.4">
+        <Badge variant="outline" color="gray.5">
           1% Transfer Rate
         </Badge>
-        <Badge variant="outline" color="gray.4">
+        <Badge variant="outline" color="gray.5">
           No Claim
         </Badge>
       </Group>
@@ -61,7 +61,7 @@ export function Headline() {
         </LayoutGroup>
       </hgroup>
 
-      <Text className={styles.description} size="xl" pt={24}>
+      <Text className={styles.description} size="xl" pt={8}>
         XCAT launched on StonkFun. Hold it and $SPCX lands in your wallet from
         trading fees.
         <br />

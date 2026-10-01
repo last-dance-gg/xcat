@@ -16,7 +16,6 @@ export default function Crew() {
           className="custom-text-style"
         />
       </div>
-      hey you
     </div>
   )
 }

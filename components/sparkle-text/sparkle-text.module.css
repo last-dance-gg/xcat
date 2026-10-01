@@ -1,0 +1,86 @@
+.sparkle {
+  position: relative;
+  display: inline-block;
+}
+
+.sparkleText {
+  color: var(--sparkle-text-color);
+  text-shadow: var(--sparkle-text-glow);
+  font-weight: 900;
+}
+
+.sparkle1,
+.sparkle2,
+.sparkle3,
+.sparkle4,
+.sparkle5 {
+  position: absolute;
+  background-image: url("../../app/_assets/images/sparkles.avif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  aspect-ratio: 1;
+  animation: sparkle 3s infinite;
+  pointer-events: none;
+}
+
+.sparkle1 {
+  inline-size: var(--size);
+  inset-block-start: var(--y);
+  inset-inline-start: var(--x);
+  animation-delay: var(--delay);
+}
+
+.sparkle2 {
+  inline-size: var(--size);
+  inset-block-start: var(--y);
+  inset-inline-start: 25%;
+  animation-delay: var(--delay);
+}
+
+.sparkle3 {
+  inline-size: var(--size);
+  inset-block-start: var(--y);
+  inset-inline-end: var(--x);
+  animation-delay: var(--delay);
+}
+
+.sparkle4 {
+  inline-size: var(--size);
+  inset-block-end: var(--y);
+  inset-inline-end: 25%;
+  animation-delay: 1400ms;
+}
+
+.sparkle5 {
+  inline-size: var(--size);
+  inset-block-end: var(--y);
+  inset-inline-start: 50%;
+  animation-delay: 0;
+}
+
+@keyframes sparkle {
+  0% {
+    opacity: 0;
+    transform: scale(0.92) rotate(-3deg);
+  }
+
+  30% {
+    opacity: 0;
+    transform: scale(0.92) rotate(-3deg);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1) rotate(5deg);
+  }
+
+  70% {
+    opacity: 0;
+    transform: scale(0.92) rotate(-3deg);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0.96) rotate(-8deg);
+  }
+}
