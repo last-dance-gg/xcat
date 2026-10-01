@@ -8,7 +8,7 @@ import styles from "./space.module.css"
 import { EarthGlow } from "./EarthGlow"
 import { EarthGlowSurface } from "./EarthGlowSurface"
 
-export default function Space() {
+export default function Space({ onGlobeReady }: { onGlobeReady: () => void }) {
   return (
     <div className={styles.space}>
       <div className={styles.cosmicGlow}>
@@ -22,7 +22,7 @@ export default function Space() {
       <div className={styles.earth}>
         <Canvas camera={{ position: [0, 0, 15], fov: 45 }}>
           <Suspense>
-            <Earth />
+            <Earth onGlobeReady={onGlobeReady} />
           </Suspense>
         </Canvas>
       </div>

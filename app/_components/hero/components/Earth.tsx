@@ -4,10 +4,27 @@ import { useFrame, useThree } from "@react-three/fiber"
 import { useEffect, useRef } from "react"
 import { Globe } from "globe-threejs"
 
-export function Earth() {
+type TextureWithImage = {
+  image?: { complete?: boolean } | null
+}
+
+function globeTexturesReady(globe: Globe) {
+  const uniforms = globe.earth.material.uniforms
+  const ready = (texture?: TextureWithImage) =>
+    Boolean(texture?.image) && texture?.image?.complete !== false
+
+  return (
+    ready(uniforms.dayTexture?.value as TextureWithImage | undefined) &&
+    ready(uniforms.nightTexture?.value as TextureWithImage | undefined)
+  )
+}
+
+export function Earth({ onGlobeReady }: { onGlobeReady: () => void }) {
   const { scene } = useThree()
 
   const globeRef = useRef<Globe | null>(null)
+  const onGlobeReadyRef = useRef(onGlobeReady)
+  onGlobeReadyRef.current = onGlobeReady
 
   useEffect(() => {
     const globe = new Globe({
@@ -21,7 +38,35 @@ export function Earth() {
 
     globe.addToScene(scene)
 
+    let settled = false
+    let frame = 0
+    let timeout = 0
+
+    const finish = () => {
+      if (settled) {
+        return
+      }
+      settled = true
+      window.clearTimeout(timeout)
+      cancelAnimationFrame(frame)
+      onGlobeReadyRef.current()
+    }
+
+    const watch = () => {
+      if (globeTexturesReady(globe)) {
+        finish()
+        return
+      }
+      frame = requestAnimationFrame(watch)
+    }
+
+    frame = requestAnimationFrame(watch)
+    timeout = window.setTimeout(finish, 10_000)
+
     return () => {
+      settled = true
+      window.clearTimeout(timeout)
+      cancelAnimationFrame(frame)
       globe.dispose()
       globeRef.current = null
     }

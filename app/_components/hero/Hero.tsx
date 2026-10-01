@@ -5,11 +5,11 @@ import Space from "./components/Space"
 import styles from "./hero.module.css"
 import { Address } from "./components/Address"
 
-export default function Hero() {
+export default function Hero({ onGlobeReady }: { onGlobeReady: () => void }) {
   return (
     <div className={styles.container}>
       <div className={styles.space}>
-        <Space />
+        <Space onGlobeReady={onGlobeReady} />
       </div>
       <div className={styles.headline}>
         <Headline />

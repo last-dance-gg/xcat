@@ -1,0 +1,21 @@
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: grid;
+  place-items: center;
+  background: var(--space-bg);
+  opacity: 1;
+  transition: opacity 500ms ease;
+}
+
+.exiting {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .loader {
+    transition: none;
+  }
+}
