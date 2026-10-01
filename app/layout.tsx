@@ -8,6 +8,8 @@ import { theme } from "../theme"
 import "@mantine/core/styles.css"
 import "@mantine/lightbox/styles.css"
 
+const basePath = process.env.BASE_PATH || ""
+
 export const metadata = {
   title: "XCAT",
   description: "Hold the cat. Get $SPCX.",
@@ -18,7 +20,7 @@ export default function RootLayout({ children }: { children: any }) {
     <html lang="en" {...mantineHtmlProps}>
       <head>
         <ColorSchemeScript />
-        <link rel="shortcut icon" href="/favicon.svg" />
+        <link rel="shortcut icon" href={`${basePath}/favicon.svg`} />
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
